@@ -1,7 +1,8 @@
 //------------------------------------------------------------------------------------------------------------
 // ODROID-C 16x2 LCD output application.
-// Compile: gcc -o lcd_out lcd_out.c -lwiringPi -lwiringPiDev -lpthread
-// Run : sudo ./<created excute file name>
+// Compile: gcc -o lcd.out lcd.c -lwiringPi -lwiringPiDev -lpthread
+// Run : ./lcd.out "First string" "Second string"
+// Requires user access to gpio. Max 16 characters per string.
 //------------------------------------------------------------------------------------------------------------
 #include <stdio.h>
 #include <stdlib.h>

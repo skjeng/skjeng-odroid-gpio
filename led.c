@@ -1,7 +1,8 @@
 //------------------------------------------------------------------------------------------------------------
 // ODROID-C 16x2 LED output application.
-// Compile: gcc -o led_out led_out.c -lwiringPi -lwiringPiDev -lpthread
-// Run : sudo ./led_out 1000001 <0 = off, 1 = on>
+// Compile: gcc -o led.out led.c -lwiringPi -lwiringPiDev -lpthread
+// Run : ./led 1000001 <0 = off, 1 = on>
+// Requires user access to gpio. Make udev rules. Total of 7 LEDs.
 //------------------------------------------------------------------------------------------------------------
 #include <stdio.h>
 #include <stdlib.h>
